@@ -9,10 +9,12 @@ export class TitleChangeClass extends Component {
   }
 
   componentDidMount() {
+    console.log("did mount");
     document.title = `${this.state.count} times clicked`;
   }
 
   componentDidUpdate() {
+    console.log("did update");
     document.title = `${this.state.count} times clicked`;
   }
 

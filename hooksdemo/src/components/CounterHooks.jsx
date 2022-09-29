@@ -18,6 +18,8 @@ export function CounterHooks() {
 
   const handleDecrement = () => {
     setCount(count - 1);
+    // count -= 1;
+    console.log(count);
   };
 
   const incrementByFive = () => {
