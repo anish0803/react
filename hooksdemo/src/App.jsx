@@ -9,7 +9,8 @@
 // import { RefExample } from "./components/RefExample";
 import React, { useState } from "react";
 // import { DataFetch } from "./components/DataFetch";
-import { ComponentA } from "./components/ComponentA";
+// import { ComponentA } from "./components/ComponentA";
+import { ClassTest } from "./components/ClassTest";
 
 export const NameContext = React.createContext();
 export const AgeContext = React.createContext();
@@ -34,12 +35,13 @@ export function App() {
       </button> */}
       {/* <RefExample /> */}
       {/* <DataFetch /> */}
-      <NameContext.Provider value={name}>
+      {/* <NameContext.Provider value={name}>
         <AgeContext.Provider value={age}>
           <ComponentA />
         </AgeContext.Provider>
       </NameContext.Provider>
-      <p>dadasda</p>
+      <p>dadasda</p> */}
+      <ClassTest />
     </>
   );
 }
