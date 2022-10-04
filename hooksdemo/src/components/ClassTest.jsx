@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+import "./ClassTest.css";
 import axios from "axios";
+
 
 
 export function ClassTest(){
@@ -8,7 +10,7 @@ export function ClassTest(){
         axios.get('https://jsonplaceholder.typicode.com/comments')
         .then((response)=>
         setPosts(response.data)) 
-        // console.log(response));
+        // console.log(response);
         // response.data
 
     },[]);
@@ -20,9 +22,9 @@ export function ClassTest(){
         {posts.map((post)=>{
            const {id,name,email,body}=post 
            return <div key={id}>
-               <h2>{name}</h2>
-               <p>{email}</p>
-               <h4>{body}</h4>
+               <h2 className="name">{name}</h2>
+               <p className="email">{email}</p>
+               <h4 className="bodi">{body}</h4>
            </div>
         })}
         </>

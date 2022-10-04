@@ -7,7 +7,8 @@
 // import { TitleChangeHooks } from "./components/TitleChangeHooks";
 // import Check from "./components/Check";
 // import { RefExample } from "./components/RefExample";
-import React, { useState } from "react";
+import React from "react";
+// import React, { useState } from "react";
 // import { DataFetch } from "./components/DataFetch";
 // import { ComponentA } from "./components/ComponentA";
 import { ClassTest } from "./components/ClassTest";
@@ -17,8 +18,8 @@ export const AgeContext = React.createContext();
 
 export function App() {
   // const [valid, setValid] = useState(0);
-  const [name, setName] = useState("vasanth");
-  const [age, setAge] = useState(10);
+  // const [name, setName] = useState("vasanth");
+  // const [age, setAge] = useState(10);
 
   return (
     <>
